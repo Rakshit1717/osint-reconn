@@ -13,7 +13,7 @@ This folder contains tools and techniques for whois, DNS lookups, email enumerat
 - Amass
 - crt.sh
 - eyewitness 
-  ### Whois lookup
+  ### Usage
 ```bash
 whois example.com
 dig example.com ANY
