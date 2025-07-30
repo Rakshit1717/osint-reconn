@@ -1,2 +1,4 @@
 ```markdown
 # Passive Reconnaissance
+Passive reconnaissance involves gathering information about a target without directly interacting with the target systems or networks. This means no packets, probes, or requests are sent to the victim’s infrastructure. Instead, data is collected from publicly available sources such as DNS records, public databases, search engines, social media, certificate transparency logs, and leaked credentials.
+This approach is stealthy and low-risk, as it leaves no trace on the target and is often the first step in the information gathering phase of a penetration test or security assessment.
