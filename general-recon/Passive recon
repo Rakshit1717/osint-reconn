@@ -2,3 +2,25 @@
 # Passive Reconnaissance
 Passive reconnaissance involves gathering information about a target without directly interacting with the target systems or networks. This means no packets, probes, or requests are sent to the victim’s infrastructure. Instead, data is collected from publicly available sources such as DNS records, public databases, search engines, social media, certificate transparency logs, and leaked credentials.
 This approach is stealthy and low-risk, as it leaves no trace on the target and is often the first step in the information gathering phase of a penetration test or security assessment.
+whois example.com
+
+dig example.com ANY
+
+nslookup -type=MX example.com
+
+curl "https://api.hunter.io/v2/domain-search?domain=example.com&api_key=YOUR_API_KEY" (API call to third party, no direct target interaction)
+
+https://haveibeenpwned.com/unifiedsearch/example@example.com (web query to third party)
+
+theharvester -d example.com -b all (passive data collection from public sources)
+
+recon-ng modules that use public search engines (e.g., bing_domain_web)
+
+shodan search apache (searching Shodan's database, no scanning done by you)
+
+sublist3r -d example.com -o subdomains.txt (uses passive DNS data and search engines)
+
+amass enum -d example.com -o amass_subdomains.txt (when run in passive mode; Amass can do active too but default enumeration is mostly passive)
+
+https://crt.sh/?q=%25.example.com (certificate transparency logs query)
+
