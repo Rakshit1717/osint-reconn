@@ -1,3 +1,5 @@
+```markdown
+#Active recon
 #(Directly interacts with target systems or network)
 shodan host 8.8.8.8 (retrieves live info about a specific IP from Shodan, may involve scanning depending on Shodan’s last scan but from your perspective it’s querying live data of the IP)
 
