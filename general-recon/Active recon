@@ -1,0 +1,10 @@
+#(Directly interacts with target systems or network)
+shodan host 8.8.8.8 (retrieves live info about a specific IP from Shodan, may involve scanning depending on Shodan’s last scan but from your perspective it’s querying live data of the IP)
+
+eyewitness --web -f urls.txt -d ./reports/ (actively connects to each URL and takes screenshots)
+
+theharvester (can be active or passive depending on flags, but often uses active queries like DNS bruteforce if enabled)
+
+amass (can be active if run with active scanning options)
+
+recon-ng (can be active if modules do direct scanning; depends on modules used)
